@@ -6,4 +6,4 @@ COPY search.sh .
 
 RUN apt-get update && apt-get install -y curl
 
-CMD ./search.sh
+ENTRYPOINT [ "./script.sh" ]
